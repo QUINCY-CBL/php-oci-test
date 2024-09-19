@@ -1,0 +1,7 @@
+services:
+  lms-migration:
+    build: .
+    volumes:
+      - .:/src
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
