@@ -13,10 +13,8 @@ RUN apt-get update && \
 RUN docker-php-ext-configure oci8 --with-oci8=instantclient,/opt/oracle/instantclient_19_8/ && \
     docker-php-ext-install oci8 && \
     echo /opt/oracle/instantclient_19_8 > /etc/ld.so.conf.d/oracle-instantclient.conf && \
-    ldconfig
-
-RUN pecl channel-update pecl.php.net && \
-    pecl install oci8-2.2.0
+    ldconfig && \
+    pecl channel-update pecl.php.net
 
 WORKDIR /usr/src/myapp
 
