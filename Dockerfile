@@ -1,7 +1,5 @@
 FROM php:7.4-cli
 
-
-
 RUN apt-get update && \
     apt-get install -y libaio1 unzip && \
     mkdir /opt/oracle && \
@@ -19,8 +17,6 @@ RUN docker-php-ext-configure oci8 --with-oci8=instantclient,/opt/oracle/instantc
 
 RUN pecl channel-update pecl.php.net && \
     pecl install oci8-2.2.0
-# RUN pecl install oci8-2.2.0 && \
-#     docker-php-ext-enable oci8
 
 WORKDIR /usr/src/myapp
 
