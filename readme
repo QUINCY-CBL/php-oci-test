@@ -1,16 +1,24 @@
-#Prerequistes
+## Prerequistes
 Docker, GIT
 
-#Clone Repo
-`git clone`
+## Clone Repo
+``` bash
+git clone
+```
 
-#Start Application
-`docker compose up -d`
+## Start Application
+``` bash
+docker compose up -d
+```
 
-#Attach to running container (VS code / Docker Desktop)
+## Attach to running container (VS code / Docker Desktop)
 
-#Within Docker container
-`php index.php`
+## Within Docker container
+``` bash
+php index.php
+```
 
-#Close container
-`docker compose down`
+## Close container
+``` bash
+docker compose down
+```
