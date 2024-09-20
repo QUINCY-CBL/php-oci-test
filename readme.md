@@ -9,7 +9,7 @@ Docker, GIT
 
 1. Clone Repo
 ```bash
-git clone
+git clone https://github.com/QUINCY-CBL/php-oci-test.git
 ```
 
 2. Start Application
