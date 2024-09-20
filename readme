@@ -1,0 +1,16 @@
+#Prerequiste
+Docker, GIT
+
+#Clone Repo
+`git clone`
+
+#Start Application
+`docker compose up -d`
+
+#Attach to running container (VS code / Docker Desktop)
+
+#Within Docker container
+`php index.php`
+
+#Close container
+`docker compose down`
