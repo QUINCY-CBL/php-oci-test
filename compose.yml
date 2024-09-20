@@ -1,5 +1,5 @@
 services:
-  lms-migration:
+  php-oci-test:
     build: .
     volumes:
       - .:/src
